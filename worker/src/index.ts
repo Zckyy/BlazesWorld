@@ -118,10 +118,18 @@ export default {
 
     const cacheSeconds = Number(env.CACHE_SECONDS ?? 1800)
     const cache = caches.default
-    const cacheKey = new Request(new URL(request.url).origin + '/feed', request)
+    const url = new URL(request.url)
+    const cacheKey = new Request(url.origin + '/feed', request)
 
-    const cached = await cache.match(cacheKey)
-    if (cached) return cached
+    // ?refresh=1 forces a fresh fetch from the album (e.g. right after
+    // deleting photos) instead of waiting out the edge-cache TTL.
+    const forceRefresh = url.searchParams.get('refresh') === '1'
+    if (forceRefresh) {
+      await cache.delete(cacheKey)
+    } else {
+      const cached = await cache.match(cacheKey)
+      if (cached) return cached
+    }
 
     try {
       const photos = await fetchAlbumPhotos(env)
