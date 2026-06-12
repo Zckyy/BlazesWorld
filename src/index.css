@@ -141,7 +141,7 @@ section {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(14deg);
+    transform: rotate(-9deg);
   }
 }
 
@@ -191,12 +191,17 @@ section {
 .anim-twinkle {
   animation: twinkle 3.2s ease-in-out infinite;
 }
+/* fill-box makes the % origins relative to the animated element itself —
+   without it SVG resolves them against the whole viewBox, sending the tail
+   arcing out of frame and sliding the eyes downwards instead of blinking. */
 .anim-tail {
-  transform-origin: 8% 90%;
+  transform-box: fill-box;
+  transform-origin: 10% 90%;
   animation: tail-swish 3.4s ease-in-out infinite;
 }
 .anim-blink {
-  transform-origin: center 60%;
+  transform-box: fill-box;
+  transform-origin: center center;
   animation: blink 5.2s ease-in-out infinite;
 }
 
