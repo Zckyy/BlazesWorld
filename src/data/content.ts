@@ -3,10 +3,10 @@
  * without touching any component code.
  */
 
-export const tagline = 'Tiny paws. Big personality.'
+export const tagline = 'The one and only Orange Monkey.'
 
 export const heroIntro =
-  'Welcome to the official home of Blaze — a gallery of chaos, cuddles, and cat magic.'
+  'Welcome to the official home of Blaze — a quiet, cuddly British Shorthair with strong opinions and softer paws. A gallery of chaos, cuddles, and cat magic.'
 
 export interface Fact {
   icon: string
@@ -18,32 +18,32 @@ export const facts: Fact[] = [
   {
     icon: '🔥',
     title: 'The name',
-    text: 'Named Blaze for the streak of orange lightning he becomes at 3am. Placeholder — add the real story here.',
+    text: 'Named after the blaze rods and blaze powder of Minecraft — a small orange creature radiating power. The resemblance was undeniable.',
   },
   {
     icon: '🎂',
     title: 'Age & origin',
-    text: 'A distinguished gentleman of [X] years, adopted from [place] on a day that changed everything.',
+    text: 'Born 3 September 2018, which makes him a distinguished gentleman of seven. He came from a friend’s litter — or rather, he walked over and decided we were his.',
   },
   {
     icon: '🧬',
-    title: 'Breed-ish',
-    text: '100% certified house panther / loaf hybrid. DNA results pending (he ate the swab).',
+    title: 'Breed',
+    text: 'British Shorthair, orange tabby edition. Round of face, plush of coat, fully aware that he is the most handsome cat in the room.',
   },
   {
-    icon: '⚡',
+    icon: '🥷',
     title: 'Superpower',
-    text: 'Can hear a treat bag open from three rooms away, through two closed doors, while asleep.',
+    text: 'Can scratch your face in the middle of the night without waking you up. You only find out at breakfast. A true ninja.',
   },
   {
-    icon: '🗣️',
+    icon: '🤫',
     title: 'Vocabulary',
-    text: 'Fluent in mrrp, brrow, and the silent meow reserved for maximum emotional damage.',
+    text: 'The strong, silent type. Barely says a word — he communicates entirely through stares, head-bumps, and strategic positioning.',
   },
   {
     icon: '😴',
     title: 'Nap rating',
-    text: 'Professional napper. 16 hours a day, 5-star reviews, fully booked until further notice.',
+    text: 'Professional napper. Zoomies are for kittens — Blaze prefers a full calendar of premium-quality sleep, ideally on top of someone.',
   },
 ]
 
@@ -56,28 +56,28 @@ export interface FavouriteCategory {
 
 export const favourites: FavouriteCategory[] = [
   {
-    icon: '🧶',
+    icon: '🪶',
     title: 'Toys',
-    blurb: 'Officially owns 14 toys. Plays with a bottle cap.',
-    items: ['The crinkle ball (the loud one)', 'A shoelace named String', 'Whatever you are holding'],
+    blurb: 'A connoisseur of the classics.',
+    items: ['The feather — undefeated, all-time favourite', 'Anything that moves like a feather', 'Your hand, if the feather is unavailable'],
   },
   {
     icon: '🛏️',
     title: 'Sleeping spots',
-    blurb: 'Anywhere inconvenient is perfect.',
-    items: ['The exact centre of the bed', 'Your laptop keyboard, mid-sentence', 'A sunbeam, tracked hourly'],
+    blurb: 'Location, location, location.',
+    items: ['Right next to his humans (velcro mode)', 'The penthouse of the cat tower', 'Under the bed, for mysterious business'],
   },
   {
     icon: '🍗',
     title: 'Food & treats',
-    blurb: 'A refined palate, allegedly.',
-    items: ['Chicken — the love language', 'The expensive treats only', 'Your dinner, given the chance'],
+    blurb: 'A simple but firm menu.',
+    items: ['Chicken — the one true love', 'Fish, when the mood strikes', 'Whatever you were about to eat'],
   },
   {
     icon: '🙃',
     title: 'Funny habits',
-    blurb: 'Documented quirks of a tiny weirdo.',
-    items: ['Sprints at nothing, wins anyway', 'Sits in any box, any size', 'Stares at the wall ominously'],
+    blurb: 'Certified Orange Monkey behaviour.',
+    items: ['Physically incapable of staying still while being petted — must wiggle and roll', 'Sweet and cuddly, until he is suddenly the manager', 'Maintains a lifelong blood feud with the vacuum cleaner'],
   },
 ]
 
@@ -90,33 +90,33 @@ export interface Memory {
 
 export const memories: Memory[] = [
   {
-    date: 'The beginning',
-    title: 'Gotcha day',
-    text: 'A tiny ball of fluff arrived and immediately claimed the entire house. Placeholder — add the real date and story.',
+    date: 'September 2018',
+    title: 'A blaze is born',
+    text: 'Born on 3 September 2018 in a friend’s litter — a tiny orange spark with a big future.',
+    icon: '🐣',
+  },
+  {
+    date: 'Autumn 2018',
+    title: 'Gotcha day (his choice)',
+    text: 'We went to see the litter, and one small kitten walked straight over and claimed us. We didn’t choose Blaze — Blaze chose us. There was no appeal process.',
     icon: '🏡',
   },
   {
-    date: 'Week two',
-    title: 'First zoomies',
-    text: 'At precisely 3:07am, Blaze discovered top speed. The hallway has never recovered.',
-    icon: '💨',
+    date: 'The incident',
+    title: 'The great outdoors disaster',
+    text: 'Fell out of a window, got stuck in a tree, and meowed his rare and precious words until rescue arrived. Verdict: the outdoors is terrible. Indoor cat for life, by his own decree.',
+    icon: '🌳',
   },
   {
-    date: 'A few months in',
-    title: 'The great curtain incident',
-    text: 'We do not talk about the curtain incident. (The curtain lost.)',
-    icon: '🧗',
+    date: 'Ongoing',
+    title: 'The vacuum war',
+    text: 'The vacuum cleaner remains his sworn nemesis. Every battle so far has ended in a tactical retreat under the bed, yet he remains undefeated in spirit.',
+    icon: '⚔️',
   },
   {
-    date: 'Last winter',
-    title: 'Blanket fort champion',
-    text: 'Blaze spent an entire snow day under the blankets, emerging only for snack negotiations.',
-    icon: '❄️',
-  },
-  {
-    date: 'Recently',
+    date: '2026',
     title: 'The website era',
-    text: 'Blaze got his own website. He remains unimpressed, but the internet is better for it.',
+    text: 'Blaze got his own website. He responded with a slow blink and a nap — which, from him, is a rave review.',
     icon: '✨',
   },
 ]
