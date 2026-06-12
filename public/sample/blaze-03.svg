@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#fff3df"/><stop offset="1" stop-color="#ffd9b8"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#halo)"/>
+  
+  <g transform="translate(110 480) rotate(-12)" fill="#e8823c" opacity="0.25">
+    <ellipse cx="0" cy="10.8" rx="14.879999999999999" ry="12"/>
+    <circle cx="-14.879999999999999" cy="-4.32" r="5.28"/>
+    <circle cx="-5.28" cy="-10.08" r="5.28"/>
+    <circle cx="5.28" cy="-10.08" r="5.28"/>
+    <circle cx="14.879999999999999" cy="-4.32" r="5.28"/>
+  </g><path d="M680 106 L684.2 115.8 L694 120 L684.2 124.2 L680 134 L675.8 124.2 L666 120 L675.8 115.8 Z" fill="#ffb86b" opacity="0.7"/>
+  <path d="M607.2 447.2 q120 -12 91.2 -100.8" stroke="#e8823c" stroke-width="38.4" fill="none" stroke-linecap="round"/>
+  <ellipse cx="420" cy="380" rx="240" ry="139.2" fill="#e8823c"/>
+  
+    <path d="M247.48799999999997 209.84 L184.56 173.36 L183.64799999999997 255.44 Z" fill="#e8823c"/>
+      <path d="M227.42399999999998 212.576 L190.032 188.9552 L196.41599999999997 243.584 Z" fill="#ffc9a3"/><path d="M294.91200000000003 209.84 L357.84 173.36 L358.752 255.44 Z" fill="#e8823c"/>
+      <path d="M314.976 212.576 L352.368 188.9552 L345.98400000000004 243.584 Z" fill="#ffc9a3"/>
+    <circle cx="271.2" cy="260" r="91.2" fill="#e8823c"/>
+    <path d="M220.12799999999996 252.704 Q234.71999999999997 267.296 249.31199999999998 252.704" stroke="#5b2f15" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M293.088 252.704 Q307.68 267.296 322.272 252.704" stroke="#5b2f15" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M262.08 280.064 L280.32 280.064 L271.2 291.00800000000004 Z" fill="#f06292"/>
+    <path d="M271.2 291.00800000000004 q0 10.943999999999999 -12.768000000000002 12.768000000000002 M271.2 291.00800000000004 q0 10.943999999999999 12.768000000000002 12.768000000000002" stroke="#5b2f15" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <line x1="232.896" y1="281.536" x2="157.2" y2="274.536" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="232.896" y1="291.536" x2="157.2" y2="291.536" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="232.896" y1="301.536" x2="157.2" y2="308.536" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="309.504" y1="281.536" x2="385.2" y2="274.536" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="309.504" y1="291.536" x2="385.2" y2="291.536" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="309.504" y1="301.536" x2="385.2" y2="308.536" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity="0.85"/><ellipse cx="420" cy="530" rx="270" ry="26" fill="#a14d22" opacity="0.15"/>
+</svg>

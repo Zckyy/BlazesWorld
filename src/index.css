@@ -1,0 +1,242 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   Theme tokens — switched at runtime via <html data-theme="day|night">.
+   Tailwind utilities (bg-base, text-ink, …) resolve to these variables, so
+   every utility class follows the active theme automatically.
+--------------------------------------------------------------------------- */
+:root,
+[data-theme='day'] {
+  --c-base: #fff7ed;
+  --c-base-soft: #ffedd8;
+  --c-surface: #fffdf9;
+  --c-surface-deep: #fff1e0;
+  --c-ink: #43302b;
+  --c-ink-soft: #79635a;
+  --c-line: rgba(67, 48, 43, 0.12);
+  --c-accent: #ee6c1d;
+  --c-accent-soft: #ffd9bb;
+  --c-pink: #e2528f;
+  --c-pink-soft: #ffd6e8;
+  --c-gold: #e9a23b;
+  --c-glow: rgba(238, 108, 29, 0.22);
+  --c-blob-a: rgba(251, 191, 130, 0.55);
+  --c-blob-b: rgba(249, 168, 212, 0.45);
+  --c-blob-c: rgba(253, 224, 71, 0.35);
+}
+
+[data-theme='night'] {
+  --c-base: #161427;
+  --c-base-soft: #1d1a33;
+  --c-surface: #221e3c;
+  --c-surface-deep: #1a1730;
+  --c-ink: #f4eee6;
+  --c-ink-soft: #b4abcd;
+  --c-line: rgba(244, 238, 230, 0.14);
+  --c-accent: #ff8c42;
+  --c-accent-soft: #4a3055;
+  --c-pink: #f495c4;
+  --c-pink-soft: #45284a;
+  --c-gold: #f5c563;
+  --c-glow: rgba(255, 140, 66, 0.28);
+  --c-blob-a: rgba(124, 58, 237, 0.3);
+  --c-blob-b: rgba(236, 72, 153, 0.18);
+  --c-blob-c: rgba(255, 140, 66, 0.16);
+}
+
+@theme inline {
+  --color-base: var(--c-base);
+  --color-base-soft: var(--c-base-soft);
+  --color-surface: var(--c-surface);
+  --color-surface-deep: var(--c-surface-deep);
+  --color-ink: var(--c-ink);
+  --color-ink-soft: var(--c-ink-soft);
+  --color-line: var(--c-line);
+  --color-accent: var(--c-accent);
+  --color-accent-soft: var(--c-accent-soft);
+  --color-pink: var(--c-pink);
+  --color-pink-soft: var(--c-pink-soft);
+  --color-gold: var(--c-gold);
+  --color-glow: var(--c-glow);
+  --font-display: 'Fredoka', 'Nunito', sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+}
+
+/* ------------------------------------------------------------------ base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--c-base);
+  color: var(--c-ink);
+  overflow-x: hidden;
+}
+
+/* Smooth cross-fade when the theme flips. */
+body,
+.theme-fade {
+  transition:
+    background-color 0.55s ease,
+    color 0.55s ease,
+    border-color 0.55s ease,
+    box-shadow 0.55s ease;
+}
+
+::selection {
+  background: var(--c-accent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 3px solid var(--c-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+section {
+  scroll-margin-top: 5.5rem;
+}
+
+/* ------------------------------------------------------------ keyframes */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(18px, -22px) rotate(8deg);
+  }
+  66% {
+    transform: translate(-14px, -10px) rotate(-6deg);
+  }
+}
+
+@keyframes blob-morph {
+  0%,
+  100% {
+    border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    border-radius: 45% 55% 44% 56% / 58% 44% 56% 42%;
+    transform: translate(4%, -5%) scale(1.08);
+  }
+}
+
+@keyframes tail-swish {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+
+@keyframes blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  95%,
+  97% {
+    transform: scaleY(0.08);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* -------------------------------------------------------- helper classes */
+.anim-float {
+  animation: float-y 5s ease-in-out infinite;
+}
+.anim-drift {
+  animation: drift 11s ease-in-out infinite;
+}
+.anim-blob {
+  animation: blob-morph 16s ease-in-out infinite;
+}
+.anim-twinkle {
+  animation: twinkle 3.2s ease-in-out infinite;
+}
+.anim-tail {
+  transform-origin: 8% 90%;
+  animation: tail-swish 3.4s ease-in-out infinite;
+}
+.anim-blink {
+  transform-origin: center 60%;
+  animation: blink 5.2s ease-in-out infinite;
+}
+
+.skeleton {
+  background-image: linear-gradient(
+    90deg,
+    var(--c-base-soft) 0px,
+    var(--c-surface) 200px,
+    var(--c-base-soft) 400px
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* Soft “premium” card shadow that follows the theme glow. */
+.glow-card {
+  box-shadow:
+    0 1px 2px rgba(20, 10, 5, 0.05),
+    0 12px 32px -14px var(--c-glow);
+}
+
+/* --------------------------------------------------------- reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .anim-float,
+  .anim-drift,
+  .anim-blob,
+  .anim-twinkle,
+  .anim-tail,
+  .anim-blink,
+  .skeleton {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

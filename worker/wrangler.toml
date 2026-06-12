@@ -1,0 +1,13 @@
+name = "blazesworld-photos"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# Configuration is provided via secrets/vars so nothing private lives in git:
+#
+#   npx wrangler secret put ALBUM_URL      # the Google Photos share link
+#
+# Optional plain vars (uncomment to override the defaults):
+# [vars]
+# ALLOWED_ORIGIN = "https://<your-username>.github.io"
+# CACHE_SECONDS = "1800"
+# MAX_PHOTOS = "60"

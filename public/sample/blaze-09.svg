@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffd9a8"/><stop offset="1" stop-color="#ff9d6b"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity="0.55"/><stop offset="1" stop-color="#fff3c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <rect width="800" height="800" fill="url(#halo)"/>
+  <path transform="translate(620 220) scale(1.5833333333333333)" d="M0 6 C-2 0 -10 0 -10 7 C-10 12 -4 16 0 20 C4 16 10 12 10 7 C10 0 2 0 0 6 Z" fill="#ffffff" opacity="0.85"/><path transform="translate(180 580) scale(0.9166666666666666)" d="M0 6 C-2 0 -10 0 -10 7 C-10 12 -4 16 0 20 C4 16 10 12 10 7 C10 0 2 0 0 6 Z" fill="#ffffff" opacity="0.6"/>
+    <path d="M351.9 328.25 L224.25 254.25 L222.39999999999998 420.75 Z" fill="#a14d22"/>
+      <path d="M311.2 333.8 L235.35 285.885 L248.29999999999998 396.7 Z" fill="#e8956b"/><path d="M448.09999999999997 328.25 L575.75 254.25 L577.5999999999999 420.75 Z" fill="#a14d22"/>
+      <path d="M488.79999999999995 333.8 L564.65 285.885 L551.6999999999999 396.7 Z" fill="#e8956b"/>
+    <circle cx="400" cy="430" r="185" fill="#a14d22"/>
+    <circle cx="326" cy="415.2" r="22.2" fill="#5b2a12"/><path d="M444.4 415.2 Q474 444.8 503.6 415.2" stroke="#5b2a12" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M381.5 470.7 L418.5 470.7 L400 492.9 Z" fill="#ff8fab"/>
+    <path d="M400 492.9 q0 22.2 -25.900000000000002 25.900000000000002 M400 492.9 q0 22.2 25.900000000000002 25.900000000000002" stroke="#5b2a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <line x1="322.3" y1="477.8" x2="168.75" y2="470.8" stroke="#fff3e0" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="322.3" y1="487.8" x2="168.75" y2="487.8" stroke="#fff3e0" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="322.3" y1="497.8" x2="168.75" y2="504.8" stroke="#fff3e0" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="477.7" y1="477.8" x2="631.25" y2="470.8" stroke="#fff3e0" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="477.7" y1="487.8" x2="631.25" y2="487.8" stroke="#fff3e0" stroke-width="4" stroke-linecap="round" opacity="0.85"/><line x1="477.7" y1="497.8" x2="631.25" y2="504.8" stroke="#fff3e0" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+</svg>
