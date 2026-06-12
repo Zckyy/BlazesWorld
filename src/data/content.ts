@@ -96,9 +96,9 @@ export const memories: Memory[] = [
     icon: '🐣',
   },
   {
-    date: 'Autumn 2018',
+    date: '19 January 2019',
     title: 'Gotcha day (his choice)',
-    text: 'We went to see the litter, and one small kitten walked straight over and claimed us. We didn’t choose Blaze — Blaze chose us. There was no appeal process.',
+    text: 'We went to see the litter, and one small kitten walked straight over and claimed us. We didn’t choose Blaze — Blaze chose us. There was no appeal process. He came home with us that day.',
     icon: '🏡',
   },
   {
